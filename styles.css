@@ -1,0 +1,40 @@
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  flex-direction: column;
+  text-align: center;
+  background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+}
+
+canvas {
+  position: absolute;
+}
+
+#confetti {
+  z-index: 1;
+}
+
+#canvas {
+  z-index: 2;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  z-index: 3; /* Ensures the button is above the canvas */
+}
+
+button:hover {
+  background-color: #45a049;
+}
