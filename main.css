@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+}
+
+.container {
+  text-align: center;
+  color: #fff;
+}
+
+#title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  animation: pop 1s infinite alternate;
+}
+
+@keyframes pop {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+
+#partyButton {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: bounce 1.5s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
